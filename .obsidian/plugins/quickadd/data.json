@@ -1,0 +1,39 @@
+{
+  "choices": [
+    {
+      "id": "bfe31764-280f-4ac0-abbb-3f06f5bad909",
+      "name": "Capture to daily note",
+      "type": "Capture",
+      "command": true,
+      "appendLink": false,
+      "captureTo": "Timestamps/{{DATE:YYYY-MM-DD}}.md",
+      "captureToActiveFile": false,
+      "createFileIfItDoesntExist": {
+        "enabled": true,
+        "createWithTemplate": false,
+        "template": ""
+      },
+      "format": {
+        "enabled": true,
+        "format": "- {{DATE:HH:mm}} {{VALUE}}\n"
+      },
+      "insertAfter": {
+        "enabled": true,
+        "after": "###### QuickAdd",
+        "insertAtEnd": false,
+        "createIfNotFound": true,
+        "createIfNotFoundLocation": "top"
+      },
+      "prepend": false,
+      "task": false
+    }
+  ],
+  "macros": [
+    {
+      "name": "Add to Kanban Board",
+      "id": "c780fae7-1ec4-46ab-aeb7-336fec8ad0b0",
+      "commands": [],
+      "runOnStartup": false
+    }
+  ]
+}
